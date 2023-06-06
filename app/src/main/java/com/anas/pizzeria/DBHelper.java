@@ -69,10 +69,10 @@ public class DBHelper extends SQLiteOpenHelper {
                 double totalCost = cursor.getDouble(3);
                 String time = cursor.getString(4);
                 String orderDetails =   "\nOrder #000" + orderId + "\n" +
-                        "\nName          - " + customerName +
-                        "\nAddress      - " + customerAddress +
-                        "\nBill               - " + totalCost +
-                        "\nDate/Time  - " + time + "\n";
+                        "\n" + customerName +
+                        "\n" + customerAddress +
+                        "\nPKR " + totalCost +
+                        "\nDate/Time: " + time + "\n";
                 orders.add(orderDetails);
             } while (cursor.moveToNext());
         }

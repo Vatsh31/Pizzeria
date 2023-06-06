@@ -29,6 +29,7 @@
             <!-- User input fields -->
             <EditText
                 android:id="@+id/nameEditText"
+                android:background="@drawable/custom_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -41,6 +42,7 @@
 
             <EditText
                 android:id="@+id/addressEditText"
+                android:background="@drawable/custom_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/nameEditText"
@@ -55,6 +57,7 @@
             <!-- Selected pizzas -->
             <TextView
                 android:id="@+id/yourOrder"
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
@@ -80,6 +83,7 @@
             <TextView
                 android:id="@+id/totalTextView"
                 android:layout_width="wrap_content"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textStyle="bold"

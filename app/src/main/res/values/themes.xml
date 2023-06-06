@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.Pizzeria" parent="Base.Theme.Pizzeria" />
+
 </resources>

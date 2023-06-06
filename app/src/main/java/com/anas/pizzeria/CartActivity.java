@@ -2,11 +2,15 @@ package com.anas.pizzeria;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import java.util.ArrayList;
 
 public class CartActivity extends AppCompatActivity {
@@ -19,7 +23,11 @@ public class CartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
-
+        Window window = CartActivity.this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(ContextCompat.getColor(CartActivity.this, R.color.colorPrimaryYellow));
+        window.setNavigationBarColor(ContextCompat.getColor(CartActivity.this, R.color.colorPrimaryYellow));
         nameEditText = findViewById(R.id.nameEditText);
         addressEditText = findViewById(R.id.addressEditText);
         TextView selectedPizzasTextView = findViewById(R.id.selectedPizzasTextView);
