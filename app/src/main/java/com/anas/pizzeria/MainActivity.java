@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         historyButton.setOnClickListener(v -> {
-            //Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
-            //startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+            startActivity(intent);
         });
     }
 
@@ -150,8 +150,8 @@ public class MainActivity extends AppCompatActivity {
                 }
                 pizzaAdapter.notifyDataSetChanged();
             }
-            //Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
-            //startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+            startActivity(intent);
         }
 
     }
