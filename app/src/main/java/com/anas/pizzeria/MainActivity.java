@@ -128,10 +128,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void openCartActivity(List<Pizza> selectedPizzas, double total) {
-        //Intent intent = new Intent(MainActivity.this, CartActivity.class);
-        //intent.putExtra("selectedPizzas", new ArrayList<>(selectedPizzas));
-        //intent.putExtra("total", total);
-        //startActivityForResult(intent, REQUEST_CART_ACTIVITY);
+        Intent intent = new Intent(MainActivity.this, CartActivity.class);
+        intent.putExtra("selectedPizzas", new ArrayList<>(selectedPizzas));
+        intent.putExtra("total", total);
+        startActivityForResult(intent, REQUEST_CART_ACTIVITY);
     }
 
     //Sets the Quantities of pizzas back to 0 once we confirm the order
